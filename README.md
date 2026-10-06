@@ -6,7 +6,7 @@ This repository contains the catalogue and the script used to produce every numb
 
 | File | Description |
 |---|---|
-| `Data_For_Research.csv` | Cross-matched ALFALFA–SDSS catalogue, 1640 galaxies |
+| `Data_For_Research - Dependece of Baryonic Tully Fisher Relation On Star Formation Rate.csv` | Cross-matched ALFALFA–SDSS catalogue, 1640 galaxies |
 | `reproduce_results.py` | Recomputes all results from the raw columns of the CSV |
 
 ## How to reproduce
