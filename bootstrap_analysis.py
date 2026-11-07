@@ -2,7 +2,7 @@
 """
 Bootstrap, leave-out and random-subsample tests for the BTFR outlier fractions.
 
-Usage:  python bootstrap_analysis.py Data_For_Research.csv
+Usage:  python bootstrap_analysis.py Data_For_Research - Dependece of Baryonic Tully Fisher Relation On Star Formation Rate.csv
 Needs:  numpy, pandas, scipy
 """
 import sys
@@ -16,7 +16,7 @@ N_BOOT = 2000
 N_SUB = 5000
 SEED = 42
 
-path = sys.argv[1] if len(sys.argv) > 1 else "Data_For_Research.csv"
+path = sys.argv[1] if len(sys.argv) > 1 else "Data_For_Research - Dependece of Baryonic Tully Fisher Relation On Star Formation Rate.csv"
 d = pd.read_csv(path)
 d.columns = [c.strip() for c in d.columns]
 
