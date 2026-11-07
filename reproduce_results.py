@@ -3,7 +3,7 @@
 Reproduces the numbers in "Dependence of Baryonic Tully-Fisher Relation Outliers
 on Specific Star Formation Rate" from the catalogue CSV.
 
-Usage:  python reproduce_results.py Data_For_Research.csv
+Usage:  python reproduce_results.py , Data_For_Research - Dependece of Baryonic Tully Fisher Relation On Star Formation Rate.csv 
 Needs:  numpy, pandas, scipy
 All residuals are recomputed from the raw columns (W50, Inc, M*, M_HI), not read
 from the stored result columns, so the CSV can be checked independently.
@@ -13,7 +13,7 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-path = sys.argv[1] if len(sys.argv) > 1 else "Data_For_Research.csv"
+path = sys.argv[1] if len(sys.argv) > 1 else "Data_For_Research - Dependece of Baryonic Tully Fisher Relation On Star Formation Rate.csv"
 d = pd.read_csv(path)
 d.columns = [c.strip() for c in d.columns]
 
